@@ -25,10 +25,31 @@ requirejs.config({
 });
 ```
 
-To get precompiled tag, require it with `riotcompile!`. As `riotcompile` uses `text` plugin, required file may have any extension(`.html`, `.tag` or anything else)
+To get compiled tag, require it with `riotcompile!`. As `riotcompile` uses `text` plugin, required file may have any extension(`.html`, `.tag` or anything else).
+Tag name will be exported.
+
+```html
+<!-- component.html -->
+<my-component>
+  <div>my component</div>
+  <style>
+    :scope {
+      display: block;
+    }
+  </style>
+
+  <script>
+    this.on('mounted', function() {
+      console.log('Component mounted!')
+    })
+  </script>
+</my-component>
+```
+
 ```js
-require('riot', 'riotcompile!./component.html', function(riot){
-    riot.mount('component');
+require('riot', 'riotcompile!./component.html', function(riot, componentName){
+  //myComponentName === 'my-component'
+  riot.mount(componentName);
 });
 ```
 
