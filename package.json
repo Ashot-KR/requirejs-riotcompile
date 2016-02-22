@@ -6,6 +6,11 @@
   "scripts": {},
   "author": "Poluektov Dmitriy <dmitry.a@k-r-w.ru>",
   "license": "MIT",
+  "homepage": "http://fontawesome.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ashot-KR/requirejs-riotcompile.git"
+  },
   "keywords": [
     "require.js",
     "requirejs",
