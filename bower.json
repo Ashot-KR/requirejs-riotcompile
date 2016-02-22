@@ -1,0 +1,35 @@
+{
+  "name": "requirejs-riotcompile",
+  "version": "0.1.0",
+  "authors": [
+    "Poluektov Dmitriy <dmitry.a@k-r-w.ru>"
+  ],
+  "description": "AMD loader for riot.js tags",
+  "main": "riotcompile.js",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "keywords": [
+    "require.js",
+    "requirejs",
+    "plugin",
+    "riot",
+    "riot.js",
+    "loader",
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "riot": "^2.3.15",
+    "text": "^2.0.14"
+  }
+}
